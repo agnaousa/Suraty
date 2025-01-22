@@ -75,12 +75,27 @@
       </div>
     </div>
 
+     <div id="timer">
+      <i></i><span id="timeLeft">60</span> ثانية
+    </div>
     <div class="ayah-container">
+
       <div class="surah-selector">
-        <select id="surahSelect">
-          <option value="random">عشوائي</option>
-        </select>
-      </div>
+    <select id="surahSelect">
+      <option value="random">عشوائي</option>
+    </select>
+  </div>
+
+      <!-- زر التبديل في الأسفل -->
+<div class="mode-toggle">
+  <input type="checkbox" id="modeToggle" />
+  <label for="modeToggle" class="mode-toggle-label">
+    <span class="mode-text mode-text-left">عشوائي</span>
+    <span class="mode-slider"></span>
+    <span class="mode-text mode-text-right">بالترتيب</span>
+  </label>
+</div>
+
       <div class="timer-selector">
         <select id="timerSelect">
           <option value="30">30 ثانية</option>
@@ -124,9 +139,7 @@
       <i class="fas fa-volume-up"></i> استمع إلى الآية
     </button>
 
-    <div id="timer">
-      <i class="fas fa-hourglass-half"></i> الوقت المتبقي: <span id="timeLeft">60</span> ثانية
-    </div>
+
     
   </div>
   
