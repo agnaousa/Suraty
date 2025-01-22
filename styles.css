@@ -335,8 +335,8 @@
   
   .contact-share {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 0.5rem;
+    right: 1.5rem;
     display: flex;
     gap: 1rem;
   }
@@ -345,6 +345,7 @@
     color: var(--text-color);
     text-decoration: none;
     font-size: 1rem;
+    cursor: pointer;
   }
 
   .contact-share a:hover {
@@ -868,7 +869,6 @@
   color: var(--text-color);
   font-size: 1rem;
   gap: 8px; /* Space between flag and text */
-  padding: 8px 12px; /* Add padding for better spacing */
   border-radius: 25px; /* Rounded corners */
   border: 2px solid transparent; /* Transparent border for glow effect */
   position: relative;
