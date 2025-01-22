@@ -246,6 +246,12 @@ async function checkAnswer() {
     const tafsirData = await tafsirResponse.json();
     if (tafsirData.code === 200 && tafsirData.data && tafsirData.data.text) {
       document.getElementById('tafsir').innerHTML = `<strong>تفسير الآية:</strong><br>${tafsirData.data.text}`;
+      
+      // Scroll to the bottom after Tafsir is displayed
+      window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: 'smooth' // Smooth scrolling
+      });
     } else {
       throw new Error('Invalid response from Tafsir API');
     }

@@ -859,3 +859,52 @@
     font-size: 0.8rem; /* Further reduce the font size */
   }
 }
+
+/* Style for the Palestine link */
+.palestine-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1rem;
+  gap: 8px; /* Space between flag and text */
+  padding: 8px 12px; /* Add padding for better spacing */
+  border-radius: 25px; /* Rounded corners */
+  border: 2px solid transparent; /* Transparent border for glow effect */
+  position: relative;
+  overflow: hidden; /* Ensure the glow stays within the border */
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Style for the Palestine link */
+.palestine-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1rem;
+  gap: 8px; /* Space between flag and text */
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.palestine-link:hover {
+  transform: scale(1.05); /* Slight scale on hover */
+  opacity: 0.9; /* Slight fade on hover */
+}
+
+.palestine-flag {
+  width: 20px; /* Smaller flag size */
+  height: 15px;
+  border-radius: 2px; /* Slight rounding for the flag */
+}
+
+.palestine-text {
+  font-weight: bold;
+}
+
+/* Adjust the contact-share container to accommodate the new link */
+.contact-share {
+  display: flex;
+  gap: 1rem; /* Space between items */
+  align-items: center;
+}
