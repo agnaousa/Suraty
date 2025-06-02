@@ -164,9 +164,8 @@
     text-align: center;
     direction: rtl;
   }
-
   .theme-toggle {
-    position: absolute;
+    position: fixed;
     top: 1rem;
     left: 1rem;
     background: none;
@@ -175,6 +174,7 @@
     font-size: 1.5rem;
     cursor: pointer;
     transition: all 0.3s ease;
+    z-index: 1000;
   }
 
   .theme-toggle:hover {
@@ -332,13 +332,13 @@
             direction: rtl;
 
         }
-  
-  .contact-share {
-    position: absolute;
+    .contact-share {
+    position: fixed;
     top: 0.5rem;
     right: 1.5rem;
     display: flex;
     gap: 1rem;
+    z-index: 1000;
   }
 
   .contact-share a {
@@ -444,11 +444,11 @@
 
     .btn-next {
       margin-left: 0;
-    }
-
-    .theme-toggle {
+    }    .theme-toggle {
+      position: fixed;
       left: 1rem;
       right: auto;
+      z-index: 1000;
     }
 
     .dropdown {
