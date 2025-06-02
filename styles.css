@@ -164,8 +164,9 @@
     text-align: center;
     direction: rtl;
   }
+
   .theme-toggle {
-    position: fixed;
+    position: absolute;
     top: 1rem;
     left: 1rem;
     background: none;
@@ -174,7 +175,6 @@
     font-size: 1.5rem;
     cursor: pointer;
     transition: all 0.3s ease;
-    z-index: 1000;
   }
 
   .theme-toggle:hover {
@@ -332,13 +332,13 @@
             direction: rtl;
 
         }
-    .contact-share {
-    position: fixed;
+  
+  .contact-share {
+    position: absolute;
     top: 0.5rem;
     right: 1.5rem;
     display: flex;
     gap: 1rem;
-    z-index: 1000;
   }
 
   .contact-share a {
@@ -418,6 +418,7 @@
     transform: translateY(0);
     margin-top: 10px;
   }
+
   @media (max-width: 600px) {
     .container {
       padding: 1rem;
@@ -444,23 +445,18 @@
     .btn-next {
       margin-left: 0;
     }
-    
-    .theme-toggle {
-      position: static;
-      margin: 1rem auto;
-      display: block;
-      width: fit-content;
-    }
 
-    .contact-share {
-      position: static;
-      margin: 1rem auto;
-      justify-content: center;
-      width: fit-content;
+    .theme-toggle {
+      left: 1rem;
+      right: auto;
     }
 
     .dropdown {
       display: block;
+    }
+
+    .contact-share {
+      display: none;
     }
   }
   
