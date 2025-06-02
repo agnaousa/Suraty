@@ -418,7 +418,6 @@
     transform: translateY(0);
     margin-top: 10px;
   }
-
   @media (max-width: 600px) {
     .container {
       padding: 1rem;
@@ -444,19 +443,24 @@
 
     .btn-next {
       margin-left: 0;
-    }    .theme-toggle {
-      position: fixed;
-      left: 1rem;
-      right: auto;
-      z-index: 1000;
+    }
+    
+    .theme-toggle {
+      position: static;
+      margin: 1rem auto;
+      display: block;
+      width: fit-content;
+    }
+
+    .contact-share {
+      position: static;
+      margin: 1rem auto;
+      justify-content: center;
+      width: fit-content;
     }
 
     .dropdown {
       display: block;
-    }
-
-    .contact-share {
-      display: none;
     }
   }
   
