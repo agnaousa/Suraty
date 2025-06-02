@@ -1,0 +1,6 @@
+# Redirect old GitHub Pages paths to new domain
+/TahadiQuran/* /:splat 301
+/TahadiQuran / 301
+
+# SPA fallback
+/* /index.html 200
